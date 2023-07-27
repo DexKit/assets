@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Token",
+    "description":
+      "The Token contract is suited for creating a digital currency and is compliant with the ERC20 standard.",
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "slug": "TokenERC20"
+  },
+  {
+    "name": "StakeERC721",
+    "description":
+      "This contract allows users to stake their ERC-721 NFTs and get ERC-20 tokens as staking rewards.",
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "slug": "NFTStake"
+  },
+  {
+    "name": "Marketplace",
+    "description":
+      "A Marketplace is a contract where you can buy and sell NFTs, such as OpenSea or Rarible.",
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "slug": "MarketplaceV3"
+  },
+  {
+    "name": "NFT Drop",
+    "description":
+      "The NFT Drop contract is ideal when you want to release a collection of unique NFTs using the ERC721A Standard.",
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "slug": "DropERC721"
+  }
+]
