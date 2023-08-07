@@ -1,34 +1,93 @@
 [
   {
-    "name": "Token",
-    "description":
-      "The Token contract is suited for creating a digital currency and is compliant with the ERC20 standard.",
     "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
     "publisherName": "ThirdWeb",
-    "slug": "TokenERC20"
+    "name": "Edition Drop",
+    "description": "Release ERC1155 tokens for a set price.",
+    "slug": "DropERC1155"
   },
   {
-    "name": "StakeERC721",
-    "description":
-      "This contract allows users to stake their ERC-721 NFTs and get ERC-20 tokens as staking rewards.",
     "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
     "publisherName": "ThirdWeb",
-    "slug": "NFTStake"
+    "name": "Token Drop",
+    "description": "Release new ERC20 tokens for a set price",
+    "slug": "DropERC20"
   },
   {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "NFT Drop",
+    "description": "Release collection of unique NFTs for a set price",
+    "slug": "DropERC721"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
     "name": "Marketplace",
-    "description":
-      "A Marketplace is a contract where you can buy and sell NFTs, such as OpenSea or Rarible.",
-    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
-    "publisherName": "ThirdWeb",
+    "description": "Buy and sell ERC721/ERC1155 tokens",
     "slug": "MarketplaceV3"
   },
   {
-    "name": "NFT Drop",
-    "description":
-      "The NFT Drop contract is ideal when you want to release a collection of unique NFTs using the ERC721A Standard.",
     "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
     "publisherName": "ThirdWeb",
-    "slug": "DropERC721"
+    "name": "Multiwrap",
+    "description": "Bundle multiple ERC721/ERC1155/ERC20 tokens into a single ERC721.",
+    "slug": "Multiwrap"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "StakeERC721",
+    "description": "Contract for staking ERC721 NFTs, for ERC20 tokens as rewards.",
+    "slug": "NFTStake"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "Pack",
+    "description": "Pack multiple tokens into ERC1155 NFTs that act as randomized loot boxes",
+    "slug": "Pack"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "SignatureDrop",
+    "description": "Signature based minting of ERC721 tokens.",
+    "slug": "SignatureDrop"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "Split",
+    "description": "Distribute funds among multiple recipients",
+    "slug": "Split"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "Edition",
+    "description": "Create editions of ERC1155 tokens",
+    "slug": "TokenERC1155"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "Token",
+    "description": "Create cryptocurrency compliant with ERC20 standard",
+    "slug": "TokenERC20"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "NFT Collection",
+    "description": "Create collection of unique NFTs.",
+    "slug": "TokenERC721"
+  },
+  {
+    "publisherIcon": "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "publisherName": "ThirdWeb",
+    "name": "Vote",
+    "description": "Create and vote on proposals",
+    "slug": "VoteERC20"
   }
 ]

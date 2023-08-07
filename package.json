@@ -1,0 +1,17 @@
+{
+  "name": "@dexkit/assets",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "index.js",
+  "repository": "https://github.com/DexKit/assets.git",
+  "author": "info@dexkit.com",
+  "license": "MIT",
+  "scripts": {
+    "generate-contracts-metadata": "node scripts/generate-contracts-list.js"
+  },
+  "dependencies": {
+    "@thirdweb-dev/sdk": "^3.10.42",
+    "axios": "^1.4.0",
+    "ethers": "5"
+  }
+}
