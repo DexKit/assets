@@ -18,7 +18,7 @@
         },
         { "name": "trustedForwarders" },
         { "name": "payees" },
-        { "name": "shares", "type": "decimal", "decimals": 4 }
+        { "name": "shares", "type": "decimal", "decimals": 2 }
       ]
     }
   ],
