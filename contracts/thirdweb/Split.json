@@ -76,28 +76,14 @@
       "inputs": [
         {
           "type": "input",
-          "ref": "payees",
+          "ref": ["payees", "shares"],
           "label": "Payees",
           "locked": false,
           "col": {
-            "sm": 6
+            "xs": 12 
           },
           "component": {
-            "type": "address-array"
-          }
-        },
-
-        {
-          "type": "input",
-          "ref": "shares",
-          "label": "Shares",
-          "locked": false,
-          "col": {
-            "sm": 6
-          },
-          "component": {
-            "type": "decimal-array",
-            "decimals": 0
+            "type": "shares-array"
           }
         }
       ]
