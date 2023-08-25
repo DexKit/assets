@@ -80,6 +80,7 @@
       "ref": "rewardToken",
       "label": "Reward token",
       "locked": false,
+      "helperText": "The address of ERC20 token to be used as staking reward. Tokens balance should be maintained on staking contract by the admin.",
       "component": {
         "type": "address"
       }
@@ -89,6 +90,7 @@
       "ref": "stakingToken",
       "label": "Staking token",
       "locked": false,
+      "helperText": "The address of ERC721 NFTs that will be staked by users.",
       "component": {
         "type": "address"
       }
@@ -99,6 +101,7 @@
       "label": "Time unit (in seconds)",
       "locked": false,
       "col": { "sm": 6, "xs": 12 },
+      "helperText": "In number of seconds. For e.g., if you want to give out rewards per hour, then enter 3600 as the number of seconds, because the time unit is 1 hour in this case.",
       "component": {
         "type": "decimal",
         "decimals": 0
@@ -109,6 +112,7 @@
       "ref": "rewardsPerUnitTime",
       "label": "Rewards per unit time",
       "locked": false,
+      "helperText": "Number of ERC20 reward tokens to be given out per hour/day/etc, based on the time unit you set above. This will be in `wei` (or other base denomination based on your token decimals).",
       "col": { "sm": 6, "xs": 12 },
       "component": {
         "type": "decimal",

@@ -110,6 +110,7 @@
           "ref": "royaltyBps",
           "label": "Percentage",
           "locked": false,
+          "isPercentage": true,
           "col": { "sm": 3, "xs": 12 },
           "component": {
             "type": "decimal",

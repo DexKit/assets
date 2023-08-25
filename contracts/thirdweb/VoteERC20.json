@@ -84,7 +84,8 @@
       "locked": false,
       "component": {
         "type": "address"
-      }
+      },
+      "helperText": "The address of the token that will be used to vote on this contract."
     },
 
     {
@@ -95,7 +96,8 @@
       "component": {
         "type": "decimal",
         "decimals": 0
-      }
+      },
+      "helperText": "The number of blocks after a proposal is created that voting on the proposal starts. A block is a series of blockchain transactions and occurs every ~1 seconds."
     },
     {
       "type": "input",
@@ -106,7 +108,8 @@
       "component": {
         "type": "decimal",
         "decimals": 0
-      }
+      },
+      "helperText": "The number of blocks that voters have to vote on any new proposal. A block is a series of blockchain transactions and occurs every ~1 seconds."
     },
 
     {
@@ -117,7 +120,8 @@
       "component": {
         "type": "decimal",
         "decimals": 0
-      }
+      },
+      "helperText": "The minimum number of voting tokens a wallet needs in order to create proposals."
     },
     {
       "type": "input",
@@ -127,7 +131,8 @@
       "component": {
         "type": "decimal",
         "decimals": 0
-      }
+      },
+      "helperText": "The fraction of the total voting power that is required for a proposal to pass. A value of 0 indicates that no voting power is sufficient, whereas a value of 100 indicates that the entirety of voting power must vote for a proposal to pass."
     }
   ],
   "name": "VoteERC20",
