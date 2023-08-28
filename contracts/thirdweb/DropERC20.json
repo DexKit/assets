@@ -119,6 +119,7 @@
           "component": {
             "isPercentage": true,
             "type": "decimal",
+            "maxDigits": 3,
             "decimals": 2
           }
         }
