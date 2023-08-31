@@ -1,0 +1,139 @@
+{
+  "paramsOrder": [
+    "_defaultAdmin",
+    "contractURI",
+    "trustedForwarders",
+    "rewardToken",
+    "stakingToken",
+    "timeUnitSeconds",
+    "rewardRatioNumerator",
+    "rewardRatioDenominator"
+  ],
+  "output": [
+    {
+      "name": "params",
+      "fields": [
+        { "name": "_defaultAdmin" },
+        {
+          "type": "ipfs-file",
+          "name": "contractURI",
+          "fields": ["name", "description", "image"]
+        },
+        { "name": "trustedForwarders" },
+        { "name": "rewardToken" },
+        { "name": "stakingToken" },
+        { "name": "timeUnitSeconds" },
+        { "name": "rewardRatioNumerator" },
+        { "name": "rewardRatioDenominator" }
+      ]
+    }
+  ],
+  "form": [
+    {
+      "type": "input",
+      "ref": "_defaultAdmin",
+      "label": "_admin",
+      "component": { "type": "hidden", "subtype": "connected-address" },
+      "locked": false
+    },
+    {
+      "type": "input",
+      "ref": "image",
+      "label": "Image",
+      "component": { "type": "image" },
+      "locked": false,
+      "col": {
+        "sm": 2
+      }
+    },
+    {
+      "type": "input-group",
+      "col": { "sm": 10 },
+      "inputs": [
+        {
+          "type": "input",
+          "ref": "name",
+          "label": "Name",
+          "locked": false,
+          "col": {
+            "sm": 12
+          }
+        },
+        {
+          "type": "input",
+          "ref": "description",
+          "label": "Description",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "ref": "trustedForwarders",
+      "label": "Trusted Forwarders",
+      "defaultValue": { "ref": "trustedForwarders" },
+      "locked": false,
+      "component": {
+        "type": "hidden"
+      }
+    },
+    {
+      "type": "input",
+      "ref": "rewardToken",
+      "label": "Reward token",
+      "locked": false,
+      "helperText": "The address of ERC20 token to be used as staking reward. Tokens balance should be maintained on staking contract by the admin.",
+      "component": {
+        "type": "address"
+      }
+    },
+    {
+      "type": "input",
+      "ref": "stakingToken",
+      "label": "Staking token",
+      "locked": false,
+      "helperText": "The address of ERC20 tokens that will be staked by users.",
+      "component": {
+        "type": "address"
+      }
+    },
+    {
+      "type": "input",
+      "ref": "timeUnitSeconds",
+      "label": "Time unit (in seconds)",
+      "locked": false,
+      "col": { "sm": 6, "xs": 12 },
+      "helperText": "In number of seconds. For e.g., if you want to give out rewards per hour, then enter 3600 as the number of seconds, because the time unit is 1 hour in this case.",
+      "component": {
+        "type": "decimal",
+        "decimals": 0
+      }
+    },
+    {
+      "type": "input",
+      "ref": "rewardRatioNumerator",
+      "label": "Reward Ratio Numerator",
+      "locked": false,
+      "helperText": "For e.g., if reward ratio is 1/20, this implies that there will be 1 Reward token given out for every 20 tokens staked. The numerator and denominator of the reward ratio should be set separately (1 and 20 in this case respectively).",
+      "col": { "sm": 6, "xs": 12 },
+      "component": {
+        "type": "decimal",
+        "decimals": 18
+      }
+    },
+    {
+      "type": "input",
+      "ref": "rewardRatioDenominator",
+      "label": "Reward Ratio Denominator",
+      "locked": false,
+      "helperText": "For e.g., if reward ratio is 1/20, this implies that there will be 1 Reward token given out for every 20 tokens staked. The numerator and denominator of the reward ratio should be set separately (1 and 20 in this case respectively).",
+      "col": { "sm": 6, "xs": 12 },
+      "component": {
+        "type": "decimal",
+        "decimals": 18
+      }
+    }
+  ],
+  "name": "TokenStake",
+  "description": "This contract allows users to stake their ERC-20 tokens and get ERC-20 tokens as staking rewards (different from the staked tokens). Contract admin should set the Staking and Reward token addresses during deployment. These can't be changed later."
+}
