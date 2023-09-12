@@ -4,7 +4,7 @@ import fs from "fs";
 
 const thirdwebPublisher = {
   publisherIcon:
-    "https://ipfs-public.thirdwebcdn.com/ipfs/QmeNn6emc8Z3VMTFBKSSozSHiG3qt36bFi7EuPCiGGpo17/0.png",
+    "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
   publisherName: "ThirdWeb",
 };
 
