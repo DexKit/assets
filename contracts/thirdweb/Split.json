@@ -34,7 +34,7 @@
       "type": "input",
       "ref": "image",
       "label": "Image",
-      "component": { "type": "image" },
+      "component": { "type": "image-url" },
       "locked": false,
       "col": {
         "sm": 2
@@ -80,7 +80,7 @@
           "label": "Payees",
           "locked": false,
           "col": {
-            "xs": 12 
+            "xs": 12
           },
           "component": {
             "type": "shares-array"

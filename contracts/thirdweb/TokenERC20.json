@@ -40,7 +40,7 @@
       "type": "input",
       "ref": "image",
       "label": "Image",
-      "component": { "type": "image" },
+      "component": { "type": "image-url" },
       "locked": false,
       "col": {
         "sm": 2

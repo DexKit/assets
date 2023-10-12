@@ -23,9 +23,16 @@
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
-    "name": "Marketplace",
-    "description": "Buy and sell ERC721/ERC1155 tokens",
+    "name": "MarketplaceV3",
+    "description": "Marketplace is a contract where you can buy and sell NFTs, like on OpenSea or Rarible. ",
     "slug": "MarketplaceV3"
+  },
+  {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
+    "publisherName": "ThirdWeb",
+    "name": "Multiwrap",
+    "description": "Bundle multiple ERC721/ERC1155/ERC20 tokens into a single ERC721.",
+    "slug": "Multiwrap"
   },
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
@@ -75,6 +82,13 @@
     "name": "NFT Collection",
     "description": "Create collection of unique NFTs.",
     "slug": "TokenERC721"
+  },
+  {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
+    "publisherName": "ThirdWeb",
+    "name": "StakeERC20",
+    "description": "Contract for staking ERC20 tokens, for another ERC20 token as rewards.",
+    "slug": "TokenStake"
   },
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
