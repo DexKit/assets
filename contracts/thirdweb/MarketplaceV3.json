@@ -12,7 +12,7 @@
       "fields": [
         { "name": "_defaultAdmin" },
         {
-          "type": "ipfs-file",
+          "type": "server-file",
           "name": "contractURI",
           "fields": ["name", "description", "image"]
         },

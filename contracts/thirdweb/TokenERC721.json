@@ -19,7 +19,7 @@
         { "name": "name" },
         { "name": "symbol" },
         {
-          "type": "ipfs-file",
+          "type": "server-file",
           "name": "contractURI",
           "fields": ["name", "description", "image"]
         },
