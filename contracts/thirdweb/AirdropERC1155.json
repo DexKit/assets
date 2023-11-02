@@ -1,0 +1,86 @@
+{
+  "paramsOrder": [
+    "_defaultAdmin",
+    "name",
+    "symbol",
+    "contractURI",
+    "trustedForwarders"
+  ],
+  "output": [
+    {
+      "name": "params",
+      "fields": [
+        { "name": "_defaultAdmin" },
+        { "name": "name" },
+        { "name": "symbol" },
+        {
+          "type": "server-file",
+          "name": "contractURI",
+          "fields": ["name", "description", "image"]
+        },
+        { "name": "trustedForwarders" }
+      ]
+    }
+  ],
+  "form": [
+    {
+      "type": "input",
+      "ref": "_defaultAdmin",
+      "label": "_admin",
+      "component": { "type": "hidden", "subtype": "connected-address" },
+      "locked": false
+    },
+    {
+      "type": "input",
+      "ref": "image",
+      "label": "Image",
+      "component": { "type": "image-url" },
+      "locked": false,
+      "col": {
+        "sm": 2
+      }
+    },
+    {
+      "type": "input-group",
+      "col": { "sm": 10 },
+      "inputs": [
+        {
+          "type": "input",
+          "ref": "name",
+          "label": "Name",
+          "locked": false,
+          "col": {
+            "sm": 9
+          }
+        },
+        {
+          "type": "input",
+          "ref": "symbol",
+          "label": "Symbol",
+          "locked": false,
+          "col": {
+            "sm": 3
+          }
+        },
+        {
+          "type": "input",
+          "ref": "description",
+          "label": "Description",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "ref": "trustedForwarders",
+      "label": "Trusted Forwarders",
+      "defaultValue": { "ref": "trustedForwarders" },
+      "locked": false,
+      "component": {
+        "type": "hidden"
+      }
+    }
+  ],
+  "name": "AirdropERC1155",
+  "description": "Airdrop ERC1155 NFTs to a list of recipients."
+}
