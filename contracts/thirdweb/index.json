@@ -96,5 +96,26 @@
     "name": "Vote",
     "description": "Create and vote on proposals",
     "slug": "VoteERC20"
+  },
+  {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
+    "publisherName": "ThirdWeb",
+    "name": "AirdropERC20",
+    "description": "Airdrop ERC20 tokens or the chain's native token to a list of recipients.",
+    "slug": "AirdropERC20"
+  },
+  {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
+    "publisherName": "ThirdWeb",
+    "name": "AirdropERC721",
+    "description": "Airdrop ERC721 NFTs to a list of recipients.",
+    "slug": "AirdropERC721"
+  },
+  {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
+    "publisherName": "ThirdWeb",
+    "name": "AirdropERC1155",
+    "description": "Airdrop ERC1155 NFTs to a list of recipients.",
+    "slug": "AirdropERC1155"
   }
 ]
