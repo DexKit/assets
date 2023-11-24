@@ -23,13 +23,6 @@
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
-    "name": "MarketplaceV3",
-    "description": "Marketplace is a contract where you can buy and sell NFTs, like on OpenSea or Rarible. ",
-    "slug": "MarketplaceV3"
-  },
-  {
-    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
-    "publisherName": "ThirdWeb",
     "name": "Multiwrap",
     "description": "Bundle multiple ERC721/ERC1155/ERC20 tokens into a single ERC721.",
     "slug": "Multiwrap"
