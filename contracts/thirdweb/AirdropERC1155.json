@@ -1,8 +1,6 @@
 {
   "paramsOrder": [
     "_defaultAdmin",
-    "name",
-    "symbol",
     "contractURI",
     "trustedForwarders"
   ],
@@ -16,7 +14,7 @@
         {
           "type": "server-file",
           "name": "contractURI",
-          "fields": ["name", "description", "image"]
+          "fields": ["name", "description", "image", "symbol"]
         },
         { "name": "trustedForwarders" }
       ]
