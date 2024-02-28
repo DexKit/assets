@@ -1,0 +1,123 @@
+{
+  "paramsOrder": [
+    "trustedForwarders",
+    "_tokenOwner",
+    "_airdropTokenAddress",
+    "_airdropAmount",
+    "_expirationTimestamp",
+    "_openClaimLimitPerWallet",
+    "_merkleRoot"
+  ],
+  "output": [
+    {
+      "name": "params",
+      "fields": [
+        { "name": "_merkleRoot", "type": "merkle-tree-file" },
+        { "name": "_tokenOwner" },
+        { "name": "_airdropTokenAddress" },
+        { "name": "_expirationTimestamp" },
+        { "name": "_airdropAmount" },
+        { "name": "_openClaimLimitPerWallet" },
+        { "name": "trustedForwarders" }
+      ]
+    }
+  ],
+  "form": [
+    {
+      "type": "input",
+      "ref": "image",
+      "label": "Image",
+      "component": { "type": "image-url" },
+      "locked": false,
+      "col": {
+        "sm": 2
+      }
+    },
+    {
+      "type": "input-group",
+      "col": { "sm": 10 },
+      "inputs": [
+        {
+          "type": "input",
+          "ref": "name",
+          "label": "Name",
+          "locked": false,
+          "col": {
+            "sm": 9
+          }
+        },
+        {
+          "type": "input",
+          "ref": "symbol",
+          "label": "Symbol",
+          "locked": false,
+          "col": {
+            "sm": 3
+          }
+        },
+        {
+          "type": "input",
+          "ref": "description",
+          "label": "Description",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "ref": "_tokenOwner",
+      "label": "Token owner",
+      "component": { "type": "address", "subtype": "connected-address" },
+      "locked": false,
+      "helperText": "Address of the owner of tokens being airdropped."
+    },
+    {
+      "type": "input",
+      "ref": "_airdropTokenAddress",
+      "label": "Airdrop Token",
+      "component": { "type": "address" },
+      "locked": false,
+      "helperText": "Contract address of the token you want to airdrop."
+    },
+    {
+      "type": "input",
+      "ref": "_airdropAmount",
+      "label": "Airdrop Amount",
+      "helperText": "Total amount of tokens available to claim."
+    },
+    {
+      "type": "input",
+      "ref": "_expirationTimestamp",
+      "label": "Expiration timestamp",
+      "helperText": "Unix timestamp after which tokens can't be claimed. Should be in seconds. You should convert expiration date/time to seconds."
+    },
+
+    {
+      "type": "input",
+      "ref": "_openClaimLimitPerWallet",
+      "label": "Claim Limit per Wallet",
+      "helperText": "Set it to 0 to make it only claimable based off the merkle root, otherwise, this value is used for public claiming."
+    },
+    {
+      "type": "input",
+      "ref": "_merkleRoot",
+      "label": "Merkle root",
+      "component": { "type": "merkle-tree-file" },
+      "locked": true,
+      "helperText": "Merkle root of the allowlist of addresses eligible to claim. For no allowlist, pass `0x` as input."
+    },
+
+    {
+      "type": "input",
+      "ref": "trustedForwarders",
+      "label": "Trusted Forwarders",
+      "defaultValue": { "ref": "trustedForwarders" },
+      "locked": false,
+      "component": {
+        "type": "hidden"
+      }
+    }
+  ],
+  "name": "AirdropERC20Claimable",
+  "description": "Let wallets (optionally in an allowlist) claim an airdrop of ERC20 tokens."
+}

@@ -1,9 +1,5 @@
 {
-  "paramsOrder": [
-    "_defaultAdmin",
-    "contractURI",
-    "trustedForwarders"
-  ],
+  "paramsOrder": ["_defaultAdmin", "contractURI", "trustedForwarders"],
   "output": [
     {
       "name": "params",
