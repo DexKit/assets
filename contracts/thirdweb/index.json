@@ -44,13 +44,6 @@
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
-    "name": "SignatureDrop",
-    "description": "Signature based minting of ERC721 tokens.",
-    "slug": "SignatureDrop"
-  },
-  {
-    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
-    "publisherName": "ThirdWeb",
     "name": "Split",
     "description": "Distribute funds among multiple recipients",
     "slug": "Split"
@@ -93,22 +86,29 @@
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
-    "name": "AirdropERC20",
+    "name": "Airdrop ERC1155",
+    "description": "Airdrop ERC1155 NFTs to a list of recipients.",
+    "slug": "AirdropERC1155"
+  },
+  {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
+    "publisherName": "ThirdWeb",
+    "name": "Airdrop ERC20",
     "description": "Airdrop ERC20 tokens or the chain's native token to a list of recipients.",
     "slug": "AirdropERC20"
   },
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
-    "name": "AirdropERC721",
-    "description": "Airdrop ERC721 NFTs to a list of recipients.",
-    "slug": "AirdropERC721"
+    "name": "Airdrop ERC20 Claimable",
+    "description": "Let wallets (optionally in an allowlist) claim an airdrop of ERC20 tokens.",
+    "slug": "AirdropERC20Claimable"
   },
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
-    "name": "AirdropERC1155",
-    "description": "Airdrop ERC1155 NFTs to a list of recipients.",
-    "slug": "AirdropERC1155"
+    "name": "Airdrop ERC721",
+    "description": "Airdrop ERC721 NFTs to a list of recipients.",
+    "slug": "AirdropERC721"
   }
 ]
