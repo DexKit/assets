@@ -1,0 +1,152 @@
+{
+  "paramsOrder": [
+    "_defaultAdmin",
+    "_token",
+    "_tokenOwner",
+    "contractURI",
+    "trustedForwarders",
+    "saleRecipient",
+    "platformFeeRecipient",
+    "platformFeeBps"
+  ],
+  "output": [
+    {
+      "name": "params",
+      "fields": [
+        { "name": "_defaultAdmin" },
+        { "name": "_token" },
+        { "name": "_tokenOwner" },
+        {
+          "type": "server-file",
+          "name": "contractURI",
+          "fields": ["name", "description", "image"]
+        },
+        { "name": "trustedForwarders" },
+        { "name": "saleRecipient" },
+        { "name": "platformFeeRecipient" },
+        { "name": "platformFeeBps" }
+      ]
+    }
+  ],
+  "form": [
+    {
+      "type": "input",
+      "ref": "_defaultAdmin",
+      "label": "_admin",
+      "component": { "type": "hidden", "subtype": "connected-address" },
+      "locked": false
+    },
+    {
+      "type": "input",
+      "ref": "image",
+      "label": "Image",
+      "component": { "type": "image-url" },
+      "locked": false,
+      "col": {
+        "sm": 2
+      }
+    },
+    {
+      "type": "input-group",
+      "col": { "sm": 10 },
+      "inputs": [
+        {
+          "type": "input",
+          "ref": "name",
+          "label": "Name",
+          "locked": false,
+          "col": {
+            "sm": 9
+          }
+        },
+        {
+          "type": "input",
+          "ref": "symbol",
+          "label": "Symbol",
+          "locked": false,
+          "col": {
+            "sm": 3
+          }
+        },
+        {
+          "type": "input",
+          "ref": "description",
+          "label": "Description",
+          "locked": false
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "ref": "trustedForwarders",
+      "label": "Trusted Forwarders",
+      "defaultValue": { "ref": "trustedForwarders" },
+      "locked": false,
+      "component": {
+        "type": "hidden"
+      }
+    },
+    {
+      "type": "input",
+      "ref": "_token",
+      "label": "Token Address",
+      "helperText": "Address of the token for the presale",
+      "locked": false,
+      "component": {
+        "type": "address"
+      }
+    },
+    {
+      "type": "input",
+      "ref": "_tokenOwner",
+      "label": "Token Owner",
+      "helperText": "Address of the token owner where from where tokens will be sold. This address needs to give allowance on this drop contract to claim conditions work",
+      "locked": false,
+      "component": {
+        "type": "address"
+      }
+    },
+
+    {
+      "type": "input",
+      "ref": "saleRecipient",
+      "label": "Sale Recipient",
+      "locked": false,
+      "component": {
+        "type": "address",
+        "subtype": "connected-address"
+      }
+    },
+    {
+      "type": "input-group",
+      "inputs": [
+        {
+          "type": "input",
+          "ref": "platformFeeRecipient",
+          "label": "Recipient Address",
+          "locked": false,
+          "component": {
+            "type": "address",
+            "subtype": "connected-address"
+          },
+          "col": { "sm": 9, "xs": 12 }
+        },
+        {
+          "type": "input",
+          "ref": "platformFeeBps",
+          "label": "Platform Fee Percentage",
+          "locked": false,
+          "col": { "sm": 3, "xs": 12 },
+          "component": {
+            "isPercentage": true,
+            "type": "decimal",
+            "maxDigits": 3,
+            "decimals": 2
+          }
+        }
+      ]
+    }
+  ],
+  "name": "DropAllowanceERC20",
+  "description": "Extends version of DropERC20 allowing users to set the token they want to sell."
+}
