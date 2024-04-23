@@ -1,6 +1,8 @@
 {
   "paramsOrder": [
     "_defaultAdmin",
+    "name",
+    "symbol",
     "_token",
     "_tokenOwner",
     "contractURI",
@@ -14,6 +16,8 @@
       "name": "params",
       "fields": [
         { "name": "_defaultAdmin" },
+        { "name": "name" },
+        { "name": "symbol" },
         { "name": "_token" },
         { "name": "_tokenOwner" },
         {
