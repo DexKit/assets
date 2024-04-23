@@ -90,7 +90,7 @@
       "ref": "stakingToken",
       "label": "Staking token",
       "locked": false,
-      "helperText": "The address of ERC721 NFTs that will be staked by users.",
+      "helperText": "The address of ERC1155 NFTs that will be staked by users.",
       "component": {
         "type": "address"
       }
