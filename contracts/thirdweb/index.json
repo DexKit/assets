@@ -30,6 +30,13 @@
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
+    "name": "StakeERC1155",
+    "description": "Contract for staking ERC1155 NFTs, for ERC20 tokens as rewards.",
+    "slug": "EditionStake"
+  },
+  {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
+    "publisherName": "ThirdWeb",
     "name": "StakeERC721",
     "description": "Contract for staking ERC721 NFTs, for ERC20 tokens as rewards.",
     "slug": "NFTStake"
