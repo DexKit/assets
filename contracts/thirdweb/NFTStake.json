@@ -112,11 +112,12 @@
       "ref": "rewardsPerUnitTime",
       "label": "Rewards per unit time",
       "locked": false,
-      "helperText": "Number of ERC20 reward tokens to be given out per hour/day/etc, based on the time unit you set above. This will be in `wei` (or other base denomination based on your token decimals).",
+      "helperText": "Number of ERC20 reward tokens to be given out per hour/day/etc, based on the time unit you set. This will be in `wei` (or other base denomination based on your token decimals).",
       "col": { "sm": 6, "xs": 12 },
       "component": {
         "type": "decimal",
-        "decimals": 0
+        "decimals": 0,
+        "maxDigits": 1000
       }
     }
   ],
