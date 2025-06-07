@@ -13,6 +13,13 @@
     "description": "Release new ERC20 tokens for a set price",
     "slug": "DropERC20"
   },
+    {
+    "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/refs/heads/main/icons/dexkit.svg",
+    "publisherName": "DexKit",
+    "name": "Token Allowance Drop",
+    "description": "Extends version of Token Drop allowing users to set the token they want to sell.",
+    "slug": "DropAllowanceERC20"
+  },
   {
     "publisherIcon": "https://raw.githubusercontent.com/DexKit/assets/main/images/thirdweb_publisher.png",
     "publisherName": "ThirdWeb",
