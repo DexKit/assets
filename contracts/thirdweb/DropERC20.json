@@ -96,35 +96,24 @@
         "subtype": "connected-address"
       }
     },
-    {
-      "type": "input-group",
-      "inputs": [
         {
-          "type": "input",
-          "ref": "platformFeeRecipient",
-          "label": "Recipient Address",
-          "locked": false,
-          "component": {
-            "type": "address",
-            "subtype": "connected-address"
-          },
-          "col": { "sm": 9, "xs": 12 }
-        },
-        {
-          "type": "input",
-          "ref": "platformFeeBps",
-          "label": "Platform Fee Percentage",
-          "locked": false,
-          "col": { "sm": 3, "xs": 12 },
-          "component": {
-            "isPercentage": true,
-            "type": "decimal",
-            "maxDigits": 3,
-            "decimals": 2
-          }
-        }
-      ]
+    "type": "input",
+    "ref": "platformFeeRecipient",
+    "defaultValue": "0x5265Bde27F57E738bE6c1F6AB3544e82cdc92a8f",
+    "locked": false,
+    "component": {
+      "type": "hidden"
     }
+  },
+  {
+    "type": "input",
+    "ref": "platformFeeBps",
+    "defaultValue": 100,
+    "locked": false,
+    "component": {
+      "type": "hidden"
+    }
+  }
   ],
   "name": "DropERC20",
   "description": "Release new ERC20 tokens for a set price"
